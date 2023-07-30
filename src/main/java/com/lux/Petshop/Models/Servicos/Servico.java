@@ -20,6 +20,10 @@ public abstract class Servico implements Serializable {
     protected double precoP, precoM, precoG;
     protected double precoPeloP, precoPeloM, precoPeloG;
 
+    public Servico(){
+
+    }
+
     public Servico(Animal a){
         this.animal = a;
         data = new Date();
@@ -84,6 +88,6 @@ public abstract class Servico implements Serializable {
     }
 
     public String toString(){
-        return "Codigo: "+getCodigo()+"\nServico: "+getNome()+"\nAnimal"+getAnimal().getNome()+"\nPreco: R$ "+calculaPreco()+"\n";
+        return "Codigo: "+getCodigo()+"\nServico: "+getNome()+"\nAnimal: "+getAnimal().getNome()+"\nPreco: R$ "+calculaPreco()+"\n";
     }
 }

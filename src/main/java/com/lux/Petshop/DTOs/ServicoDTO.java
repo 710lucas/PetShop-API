@@ -16,6 +16,7 @@ import java.util.Date;
 public class ServicoDTO {
 
     private Animal animal;
+    private int codigo;
     private Date data;
     private String nome;
     protected double precoP, precoM, precoG;

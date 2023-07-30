@@ -23,6 +23,7 @@ public class InventarioService {
         inventario.setServicos(s.findAll());
     }
 
+
     public void addBanho(Animal a){
         Servico servico = new Banho(a);
         inventario.addServico(servico);
@@ -60,6 +61,10 @@ public class InventarioService {
 
     public String getServicoDescricao(int codigo){
         return servicos.findById(codigo).get().toString();
+    }
+
+    public String toString(){
+        return inventario.toString();
     }
 
 

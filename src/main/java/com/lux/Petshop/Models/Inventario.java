@@ -44,6 +44,7 @@ public class Inventario implements Serializable {
         String out = "";
         for(Servico s : servicos)
             out+=s.toString()+"\n";
+        out+="Preco total: "+calculaTotalServicos()+"\n";
         return out;
     }
 
