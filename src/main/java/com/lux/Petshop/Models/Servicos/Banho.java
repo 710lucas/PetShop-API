@@ -11,5 +11,6 @@ public class Banho extends Servico{
         this.precoPeloP = 0;
         this.precoPeloM = 10;
         this.precoG = 20;
+        setNome("Banho");
     }
 }

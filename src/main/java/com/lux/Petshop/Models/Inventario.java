@@ -18,6 +18,10 @@ public class Inventario implements Serializable {
         servicos.add(s);
     }
 
+    public void removeServico(Servico s){
+        servicos.remove(s);
+    }
+
     public double calculaServicoPosicao(int posicao){
         return servicos.get(posicao).calculaPreco();
     }
@@ -34,6 +38,13 @@ public class Inventario implements Serializable {
         for(Servico s : servicos)
             total+=s.calculaPreco();
         return total;
+    }
+
+    public String toString(){
+        String out = "";
+        for(Servico s : servicos)
+            out+=s.toString()+"\n";
+        return out;
     }
 
 }

@@ -82,4 +82,8 @@ public abstract class Servico implements Serializable {
     public void setNome(String nome){
         this.nome = nome;
     }
+
+    public String toString(){
+        return "Codigo: "+getCodigo()+"\nServico: "+getNome()+"\nAnimal"+getAnimal().getNome()+"\nPreco: R$ "+calculaPreco()+"\n";
+    }
 }

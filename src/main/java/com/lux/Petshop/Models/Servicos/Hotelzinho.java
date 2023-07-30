@@ -11,6 +11,7 @@ public class Hotelzinho extends Servico{
         this.precoM = 18;
         this.precoG = 25;
         this.precoPeloG = this.precoPeloM = this.precoPeloP = 0;
+        setNome("Hotelzinho");
     }
 
     public void setHoras(double horas) {

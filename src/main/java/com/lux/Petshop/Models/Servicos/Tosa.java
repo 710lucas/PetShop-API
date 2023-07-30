@@ -11,6 +11,7 @@ public class Tosa extends Servico{
         this.precoM = 30;
         this.precoG = 40;
         this.precoPeloG = this.precoPeloM = this.precoPeloP = 0;
+        setNome("Tosa");
     }
 
 }
